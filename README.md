@@ -134,6 +134,47 @@ export class UserDetailsComponent {
 - **observable()**
 - computed()
 
+## Quiz for JavaScript and TypeScript
+
+1. What's the value of `a` in this example?
+`let a = otherValue ?? 21`
+
+- 12 if otherValue === 12, 21 if otherValue is null or undefined
+- 12 if otherValue === 12, 21 if otherValue is {} or undefined
+- "otherValue"
+- 12 if otherValue == 12, 21 if otherValue is null
+
+2. According to the following function signature:
+`function setCurrency(value: number, currency: 'USD' | 'GBP')`
+Which of the following code examples would compile:
+
+- setCurrency(10);
+- **setCurrency(10, 'USD');**
+- setCurrency('10', 'GBP');
+- None of the above, the function syntax is incorrect
+
+3. What does the following code output to the console?
+`enum UserResponse {
+ No = 0,
+ Yes = 1,
+}
+
+console.log(UserResponse.Yes);`
+
+- [object Object]
+- Yes
+- UserResponse.Yes
+- **1**
+
+4. How many parameters does the following function expect?
+`function test(a, b, ...c) {
+   // ...
+}`
+
+- None, this function signature is incorrect
+- 2 to 5
+- exactly 3
+- **at least 2**
 
 ## Coding Challenge
 ### Create a Component Driven by Inputs
