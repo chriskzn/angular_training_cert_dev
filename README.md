@@ -649,3 +649,83 @@ If you see the data-test attribute anywhere in the boilerplate don't remove it.
 
 ##### Example of Fixed Application
 This is an example of what the functionality should look like for the completed exercise.
+
+## Some Random Questions
+1. One of the following syntaxes is correct for injecting a LoginService in LoginComponent.
+Which one is it?
+
+- @Injectable() 
+loginService: LoginService;
+- **myService = inject(LoginService);**
+- loginservice = create(LoginService)
+- loginService = constructor(loginService: LoginService);
+
+2. In Angular, which service is used to handle HTTP requests?
+
+- fetch
+- **HttpClient**
+- HttpHandler
+- HttpRequest
+
+3. Which of the following functions is not a part of the Signals API?
+
+- effect()
+- **subscribe()**
+- computed()
+- signal()
+
+4. In Angular, what is the purpose of the @Input decorator?
+
+- **To allow data to be passed from a parent component to a child component**
+- To define a component's selector
+- To listen for events emitted by a child component
+- To inject a service into a component
+
+5. What does the RxJs map() operator do?
+
+- Applies a given function to each array emitted by the source Observable, and returns the resulting values as an Observable of arrays
+- **Applies a given function to each value emitted by the source Observable, and emits the resulting values as an Observable**
+- Applies a given function to each value emitted by the source Observable, and returns the resulting values as an array
+- Applies a given function to the source Observable, subscribes to it, and emits the resulting values as an Observable
+
+6. Which Angular CLI command is used to generate a new component?
+
+- ng new component my-component
+- ng g t my-component
+- ng create component my-component
+- **ng generate component my-component**
+
+7. What is one requirement for this syntax to work?
+loadComponent: () => import('./admin/admin.component').then(comp => comp.AdminComponent)
+
+- This syntax does not work
+- AdminComponent must be a standalone component
+- **AdminComponent must be in a lazy-loaded module**
+- AdminComponent must be the default export in its source file
+
+8. Which syntax is used to access the underlying NgForm instance in a template-driven form?
+
+- [ngForm]="value"
+- *ngForm="ngModel"
+- **#form="ngForm"**
+- #model="ngModel"
+
+9. Which CLI command should we run to compile and serve our project locally in development mode?
+
+- ng test
+- ng build
+- **ng serve**
+- ng server
+
+10. What does the following code output to the console?
+`enum UserResponse {
+ No = 0,
+ Yes = 1,
+}
+
+console.log(UserResponse.Yes);`
+
+- [object Object]
+- Yes
+- UserResponse.Yes
+- **1**
