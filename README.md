@@ -208,23 +208,23 @@ export class HighlightDirective {
 
 4. What is the proper syntax to display a list of names in `div` elements when `display` is true?
 
-- <div *ngIf="display" *ngFor="let name of names">
+- `<div *ngIf="display" *ngFor="let name of names">
     {{name}}
-</div>
+</div>`
 
 - **<ng-container *ngIf="display">
 
-  <div *ngFor="let name of names">{{name}}</div>
+  `<div *ngFor="let name of names">{{name}}</div>`
 </ng-container>**
 
 - <ng-template *ngIf="display">
 
-  <div *ngFor="let name of names">{{name}}</div>
+  `<div *ngFor="let name of names">{{name}}</div>`
 </ng-template>
 
 - <ng-switch *ngSwitchCase="display">
 
-<div *ngFor="let name of names">{{name}}</div>
+`<div *ngFor="let name of names">{{name}}</div>`
 </ng-switch>
 
 
