@@ -137,42 +137,44 @@ export class UserDetailsComponent {
 
 ## Coding Challenge
 ### Create a Component Driven by Inputs
-Challenge Description
+#### Challenge Description
 In this challenge, let's create a movie item component that receives Movie information as an input.
 
-Requirements
-Open src/movie-item/movie-item.component.ts
-Add a required input of type Movie (see sample movie provided in src/app.component.ts)
-Update the provided HTML template to render the movie:
-Title
-Release date (no formatting needed)
-Budget ($ {value} million - for instance: $ 50 million)
-Duration ({value} min - for instance: 152 min)
-Update src/app.component.html to pass the sample movie as an input
-Ensure your component is displayed properly on the screen
-💡 HINT: Review our self-study content if you get stuck at any step
+##### Requirements
+- Open src/movie-item/movie-item.component.ts
+- Add a required input of type Movie (see sample movie provided in src/app.component.ts)
+- Update the provided HTML template to render the movie:
+- - Title
+- - Release date (no formatting needed)
+- - Budget ($ {value} million - for instance: $ 50 million)
+- - Duration ({value} min - for instance: 152 min)
+- Update src/app.component.html to pass the sample movie as an input
+- Ensure your component is displayed properly on the screen
+- - 💡 HINT: Review our self-study content if you get stuck at any step
 
-Other Considerations
-If you see the data-test attribute anywhere in the boilerplate don't remove it.
-Mini.css is preinstalled with the default config. It might be helpful for you, if you want to have some styles. (Not required)
-Example of Finished Component
+##### Other Considerations
+- If you see the data-test attribute anywhere in the boilerplate don't remove it.
+- Mini.css is preinstalled with the default config. It might be helpful for you, if you want to have some styles. (Not required)
+
+##### Example of Finished Component
 This is an example of what the functionality should look like for the completed exercise. If you’d like to mimic this style, feel free to do so, but it is not required.
 
 ## Coding Challenge
 ### Display a List of Components
-Challenge Description
+#### Challenge Description
 In this challenge, we display multiple instances of our MovieItemComponent.
 
-Requirements
-Inject MoviesService into the AppComponent
-💡 HINT: Review our self-study content on dependency injection if you're stuck here
+##### Requirements
+- Inject MoviesService into the AppComponent
+- - 💡 HINT: Review our self-study content on dependency injection if you're stuck here
 
-Retrieve a Signal of all movies from that service.
-Use the @for block to repeat MovieItemComponent as many times as needed
-💡 HINT: Feel free to remove any code that isn't needed anymore in your components
+- Retrieve a Signal of all movies from that service.
+- Use the @for block to repeat MovieItemComponent as many times as needed
+- - 💡 HINT: Feel free to remove any code that isn't needed anymore in your components
 
-Other Considerations
-If you see the data-test attribute anywhere in the boilerplate don't remove it.
-Mini.css is preinstalled with the default config. It might be helpful for you, if you want to have some styles (not required)
-Example of Finished Application
+##### Other Considerations
+- If you see the data-test attribute anywhere in the boilerplate don't remove it.
+- Mini.css is preinstalled with the default config. It might be helpful for you, if you want to have some styles (not required)
+
+##### xample of Finished Application
 This is an example of what the functionality should look like for the completed exercise. If you’d like to mimic this style, feel free to do so, but it is not required.
