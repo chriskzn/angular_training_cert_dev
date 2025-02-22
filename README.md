@@ -321,6 +321,38 @@ loadComponent:
 - This syntax does not work
 
 
+## Quiz for RxJs Observables
+
+1. Which of the following is an incorrect statement regarding RxJS observables?
+
+- They are used by the HttpClient of Angular
+- They are objects we subscribe to
+- They are a way to work with asynchronous data
+- **They make our code synchronous**
+
+2. When using Rxjs Observables, what does the `.pipe()` method do?
+
+- It enables the use of Angular pipes with RxJs
+- It turns an Observable into an Angular pipe
+- **It enables chaining multiple RxJs operators**
+- It automatically subscribes and unsubscribes from an Observable
+
+3. What does the RxJs `map()` operator do?
+
+- Applies a given function to the source Observable, subscribes to it, and emits the resulting values as an Observable
+- Applies a given function to each array emitted by the source Observable, and returns the resulting values as an Observable of arrays
+- Applies a given function to each value emitted by the source Observable, and returns the resulting values as an array
+- **Applies a given function to each value emitted by the source Observable, and emits the resulting values as an Observable**
+
+4. Which of the following is a common use case for `switchMap` in Angular?
+
+- Creating animations
+- **Making HTTP requests based on user input, like searching or fetching data**
+- Turning an Observable into a Signal
+- Managing application state
+
+
+
 ## Coding Challenge
 ### Create a Component Driven by Inputs
 #### Challenge Description
@@ -464,4 +496,20 @@ If you see the data-test attribute anywhere in the boilerplate don't remove it.
 ##### Example of Finished Application
 This is an example of what the functionality should look like for the completed exercise. If you’d like to mimic this style, feel free to do so, but it is not required.
 
+## Coding Challenge
+### Use RxJs Observables to Display Data
+#### Challenge Description
+In this challenge, our lead developer decided to update movies.service.ts to make it return Observables instead of Signals. As a result, we have to update our components to use Observables instead of Signals.
 
+##### Requirements
+- Update src/home/home.component.ts to make it handle the new Observable and render the list of all movies.
+- - 💡 HINT: Remember the async pipe? Now is a good time to use it!
+
+- Update MovieDetailsComponent to make it handle the new Observable and render movie details.
+- The app should work just like it did before with no visible difference to the user.
+
+##### Other Considerations
+If you see the data-test attribute anywhere in the boilerplate don't remove it.
+
+##### Example of Finished Application
+This is an example of what the functionality should look like for the completed exercise. If you’d like to mimic this style, feel free to do so, but it is not required.
