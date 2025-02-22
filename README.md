@@ -729,3 +729,25 @@ console.log(UserResponse.Yes);`
 - Yes
 - UserResponse.Yes
 - **1**
+
+
+## Code Challenge
+### Job Search App Code Challenge
+#### Challenge Description
+This is a simple Job Search that allows you to list, see details, and create a list of favorite jobs. However, there are currently some issues.
+
+Your task is to figure out why the issues exist and fix them!
+
+##### Requirements
+- Fix the bug causing the date format to not be "02/04/2024" on the job details screen (two digits for day and month, year has 4 digits)
+- - 💡 HINT: How do we format dates with Angular?
+
+- Fix the bug causing the favorites rendering to be broken on the jobs page. There are no favorites by default so all "star" icons on the jobs page must be white, not yellow.
+
+- Do NOT rename any existing variables
+
+- Use proper types for you data. Do NOT use any or Object or {} as data types.
+
+##### Other Considerations
+- If you see the data-test attribute in the boilerplate don't remove it. If you remove it, your code may be invalid for the certificate.
+- Your code will be linted and must be clean of anti-patterns. Follow best practices.
