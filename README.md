@@ -283,6 +283,44 @@ loginService: LoginService;
 - **myService = inject(LoginService);**
 
 
+## Quiz for Angular Router
+
+1. In Angular, what is the purpose of the <router-outlet> tag?
+
+- It defines the root component of the application
+- It specifies navigation links for the user
+- It's a way to embed an iframe in an Angular application
+- **It indicates where routed components will be rendered**
+
+2. Considering the following router config, which component will be rendered when a user navigates to /products/21?
+RouterModule.forRoot([
+     { path: '', component: ProductListComponent },
+     { path: 'products/:productId', component: ProductDetailsComponent }
+])
+
+- A 404 page would show up
+- ProductListComponent
+- **ProductDetailsComponent**
+- None; there is no mapping for that route
+
+3. Which of the following is not an existing guard function that can be used with the Angular router?
+
+- CanDeactivate
+- CanLoad
+- **CanNavigate**
+- CanActivateChild
+
+4. What is one requirement for this syntax to work?
+
+loadComponent:
+    () => import('./admin/admin.component').then(comp => comp.AdminComponent)
+
+- AdminComponent must be in a lazy-loaded module
+- **AdminComponent must be a standalone component**
+- AdminComponent must be the default export in its source file
+- This syntax does not work
+
+
 ## Coding Challenge
 ### Create a Component Driven by Inputs
 #### Challenge Description
@@ -397,8 +435,33 @@ In this challenge, we want to be able to manage favorite movies in the app by:
 - Update app.component.ts to handle the interactions with favorites.service.ts and pass the favorite information to movie-item.component.ts.
 - - 🚨 PRO TIP: Using inputs/outputs to avoid injecting services in too many components is a fundamental architectural concept known as using presentation and container components.
 
-##### ther Considerations
+##### Other Considerations
 - If you see the data-test attribute anywhere in the boilerplate don't remove it.
 
 ##### Example of Finished Application
 This is an example of what the functionality should look like for the completed exercise. If you’d like to mimic this style, feel free to do so, but it is not required.
+
+
+## Coding Challenge
+### Use the Router to Display Movie Details
+#### Challenge Description
+In this challenge, we want to be able to display movie details by clicking on the "Details" button of any movie displayed on the screen, using the component router and lazy-loading.
+
+##### Requirements
+
+- Edit the provided src/home/home.component.ts to make it the new landing page that displays the list of movies.
+- Change app.component.ts to display just a <router-outlet />. The entire page will be controlled by the router.
+- Change the router config in app.routes.ts by adding two routes:
+- - A route for the default path "" goes to HomeComponent (landing page with movies list)
+- - A route for the path "details/:id" lazy-loads MovieDetailsComponent (page with details for a single movie)
+- - 💡 HINT: Not sure how to use lazy-loading? Head back to our lesson section on lazy-loading
+
+- Update the "Details" button in MovieItemComponent so it uses a routerLink to navigate to the proper movie details.
+
+##### Other Considerations
+If you see the data-test attribute anywhere in the boilerplate don't remove it.
+
+##### Example of Finished Application
+This is an example of what the functionality should look like for the completed exercise. If you’d like to mimic this style, feel free to do so, but it is not required.
+
+
