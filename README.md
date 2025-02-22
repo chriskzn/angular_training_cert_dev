@@ -28,7 +28,7 @@
 
 - ng add
 - ng test
-= **ng fix**
+- **ng fix**
 - ng build
 
 5. Which one of these concepts does not exist in the Angular framework?
@@ -71,7 +71,7 @@
 
 - [header]
 - app-header
-- **<app-header>**
+- **`<app-header>`**
 - .header
 
 3. What is the decorator used to pass data to a component?
@@ -92,24 +92,24 @@
 <div *ngIf="showItems" *ngFor="let item of items">{{item}}</div>
 Which alternative syntax would generate the exact same DOM structure as intended above?
 
-- <div *ngIf="showItems">
+- `<div *ngIf="showItems">
      <span *ngFor="let item of items">{{item}}</span>
-</div>
+</div>`
 
 
-- **<ng-container *ngIf="showItems">
+- **`<ng-container *ngIf="showItems">
 
     <div *ngFor="let item of items">{{item}}</div>
-    </ng-container>**
+    </ng-container>`**
 
 
-- <div [hidden]="! showItems" *ngFor="let item of items">{{item}}</div>
+- `<div [hidden]="! showItems" *ngFor="let item of items">{{item}}</div>`
 
 
-- <ng-template *ngIf="showItems">
+- `<ng-template *ngIf="showItems">
 
 <div *ngFor="let item of items">{{item}}</div>
-</ng-template>
+</ng-template>`
 
 
 6. What is the purpose of the ViewChild decorator in this component example?
