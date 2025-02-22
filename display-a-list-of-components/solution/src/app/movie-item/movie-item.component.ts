@@ -20,7 +20,6 @@ import { Movie } from '../model/movie.model';
   styleUrls: [ 'movie-item.component.scss' ]
 })
 export class MovieItemComponent {
-  //movie  = input.required<Movie>();
-  @input() movie!: Movie;
+  movie  = input.required<Movie>();
 }
 
