@@ -352,6 +352,36 @@ loadComponent:
 - Managing application state
 
 
+## Quiz for Angular Forms
+
+1. Which of the following properties is NOT a valid property of an Angular `FormControl`:
+
+- valid
+- untouched
+- **async**
+- dirty
+
+2. What is the name of the Angular service used to create reactive forms?
+
+- FormFactory
+- FormService
+- FormControl
+- **FormBuilder**
+
+3. Which event is emitted when the value of a form control changes in Angular reactive forms?
+
+- controlChange
+- update
+- **valueChange**
+- input
+
+4. Which syntax is used to access the underlying `NgForm` instance in a template-driven form?
+
+- #model="ngModel"
+- Turning an Observable into a Signal
+- **#form="ngForm"**
+- [ngForm]="value"
+
 
 ## Coding Challenge
 ### Create a Component Driven by Inputs
@@ -507,6 +537,24 @@ In this challenge, our lead developer decided to update movies.service.ts to mak
 
 - Update MovieDetailsComponent to make it handle the new Observable and render movie details.
 - The app should work just like it did before with no visible difference to the user.
+
+##### Other Considerations
+If you see the data-test attribute anywhere in the boilerplate don't remove it.
+
+##### Example of Finished Application
+This is an example of what the functionality should look like for the completed exercise. If you’d like to mimic this style, feel free to do so, but it is not required.
+
+## Coding Challenge
+### Add Filters to our Movies App
+#### Challenge Description
+In this challenge, we want to add filters to the UI so users can look for specific movies by title and year of release.
+
+##### Requirements
+- apture user input in the form using some of the tools described in our lesson.
+- - 💡 HINT: Is this a complex form or a simple one? What's the easiest approach to get a form's value?
+
+- Use the filterMovieList from movies.service to get an Observable of filtered movies based on user input.
+- Display a filtered list of movies to the user.
 
 ##### Other Considerations
 If you see the data-test attribute anywhere in the boilerplate don't remove it.
