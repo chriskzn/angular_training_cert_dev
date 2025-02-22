@@ -190,7 +190,7 @@ console.log(UserResponse.Yes);`
 
 - {{ amount | currency | ‘USD’ }}
 - {{ amount | currency :: ‘$’ }}
-- {{ amount | currency : ‘USD’ }}
+- **{{ amount | currency : ‘USD’ }}**
 - None of the above - all are incorrect
 
 3. What is the `HostBinding` decorator doing in this directive?
@@ -206,19 +206,23 @@ export class HighlightDirective {
 - It is creating an inline style on the host element with a CSS property named highlighted set to true.
 - It is adding the CSS class named highlighted to any DOM element for which the tag name is appHighlight.
 
-What is the proper syntax to display a list of names in `div` elements when `display` is true?
-<div *ngIf="display" *ngFor="let name of names">
+4. What is the proper syntax to display a list of names in `div` elements when `display` is true?
+
+- <div *ngIf="display" *ngFor="let name of names">
     {{name}}
 </div>
-<ng-container *ngIf="display">
+
+- **<ng-container *ngIf="display">
 
   <div *ngFor="let name of names">{{name}}</div>
-</ng-container>
-<ng-template *ngIf="display">
+</ng-container>**
+
+- <ng-template *ngIf="display">
 
   <div *ngFor="let name of names">{{name}}</div>
 </ng-template>
-<ng-switch *ngSwitchCase="display">
+
+- <ng-switch *ngSwitchCase="display">
 
 <div *ngFor="let name of names">{{name}}</div>
 </ng-switch>
