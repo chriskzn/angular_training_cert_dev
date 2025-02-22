@@ -176,5 +176,5 @@ In this challenge, we display multiple instances of our MovieItemComponent.
 - If you see the data-test attribute anywhere in the boilerplate don't remove it.
 - Mini.css is preinstalled with the default config. It might be helpful for you, if you want to have some styles (not required)
 
-##### xample of Finished Application
+##### Example of Finished Application
 This is an example of what the functionality should look like for the completed exercise. If you’d like to mimic this style, feel free to do so, but it is not required.
