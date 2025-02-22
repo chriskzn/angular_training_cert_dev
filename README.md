@@ -5,108 +5,108 @@
 
 1. Which CLI command should we run to compile and serve our project locally in development mode?
 
-**ng serve**
-ng development
-ng deploy
-ng build
+- **ng serve**
+- ng development
+- ng deploy
+- ng build
 
 2. What does Angular refer to?
 
-**The latest version of the framework (Angular 2+)**
-Version 16 of the framework
-Version 3 of the framework
-Version 1 of the framework
+- **The latest version of the framework (Angular 2+)**
+- Version 16 of the framework
+- Version 3 of the framework
+- Version 1 of the framework
 
 3. Which of the following file names does not follow the Angular style-guide conventions?
 
-name.service.ts
-app.component.ts
-**uppercase-pipe.ts**
-highlight-all.directive.ts
+- name.service.ts
+- app.component.ts
+- **uppercase-pipe.ts**
+- highlight-all.directive.ts
 
 4. Which one of the following is not a valid Angular CLI command?
 
-ng add
-ng test
-**ng fix**
-ng build
+- ng add
+- ng test
+= **ng fix**
+- ng build
 
 5. Which one of these concepts does not exist in the Angular framework?
 
-**Redux reducers**
-Standalone components
-Structural directives
-NgModules
+- **Redux reducers**
+- Standalone components
+- Structural directives
+- NgModules
 
 6. Which of the following statements is true?
 
-**Pipes are used to format data such as dates and numbers**
-Directives are a way to interact with server-side APIs
-Services link components to server-side HTML templates
-Component libraries cannot be customized to our needs
+- **Pipes are used to format data such as dates and numbers**
+- Directives are a way to interact with server-side APIs
+- Services link components to server-side HTML templates
+- Component libraries cannot be customized to our needs
 
 7. What's the main language of the Angular framework?
 
-JSP
-JavaScript
-**TypeScript**
-AppScript
+- JSP
+- JavaScript
+- **TypeScript**
+- AppScript
 
 8. Which @NgModule decorator option defines the main component of an Angular application?
 
-main: [AppComponent]
-bootstrap: AppComponent
-**bootstrap: [AppComponent]**
-start: AppComponent
+- main: [AppComponent]
+- bootstrap: AppComponent
+- **bootstrap: [AppComponent]**
+- start: AppComponent
 
 ## Quiz for Angular Components
 1. Which @for block option is required?
 
-**track**
-trackBy
-$index
-count
+- **track**
+- trackBy
+- $index
+- count
 
 2. Which of the following options is not a valid Angular selector?
 
-[header]
-app-header
-**<app-header>**
-.header
+- [header]
+- app-header
+- **<app-header>**
+- .header
 
 3. What is the decorator used to pass data to a component?
 
-**@Input()**
-@Model()
-@Prop()
-@Data()
+- **@Input()**
+- @Model()
+- @Prop()
+- @Data()
 
 4. Which of these HTML template examples would automatically render the latest value of `data` when `data` changes?
 
-**[value]="data"**
-{data}
-([ngModel])=”data”
-(click)="data"
+- **[value]="data"**
+- {data}
+- ([ngModel])=”data”
+- (click)="data"
 
 5. The following syntax does not compile:
 <div *ngIf="showItems" *ngFor="let item of items">{{item}}</div>
 Which alternative syntax would generate the exact same DOM structure as intended above?
 
-<div *ngIf="showItems">
+- <div *ngIf="showItems">
      <span *ngFor="let item of items">{{item}}</span>
 </div>
 
 
-**<ng-container *ngIf="showItems">
+- **<ng-container *ngIf="showItems">
 
     <div *ngFor="let item of items">{{item}}</div>
     </ng-container>**
 
 
-<div [hidden]="! showItems" *ngFor="let item of items">{{item}}</div>
+- <div [hidden]="! showItems" *ngFor="let item of items">{{item}}</div>
 
 
-<ng-template *ngIf="showItems">
+- <ng-template *ngIf="showItems">
 
 <div *ngFor="let item of items">{{item}}</div>
 </ng-template>
@@ -121,21 +121,18 @@ export class UserDetailsComponent {
  @ViewChild('test') test;
 
 
-It makes the tag in the template support content projection.
-
-It indicates that the tag be rendered as a child of the parent view that uses this component.
-
-**It provides access from within the component class to the ElementRef object for the tag that has the test template reference variable.**
-
-It makes the tag visible in the final render. If @ViewChild was not used in the class, then Angular would automatically hide the tag that has #test on it.
+= It makes the tag in the template support content projection.
+- It indicates that the tag be rendered as a child of the parent view that uses this component.
+- **It provides access from within the component class to the ElementRef object for the tag that has the test template reference variable.**
+- It makes the tag visible in the final render. If @ViewChild was not used in the class, then Angular would automatically hide the tag that has #test on it.
 
 
 7. Which of the following functions is not a part of the Signals API?
 
-signal()
-effect()
-**observable()**
-computed()
+- signal()
+- effect()
+- **observable()**
+- computed()
 
 
 ## Coding Challenge
