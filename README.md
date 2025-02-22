@@ -113,15 +113,15 @@ Which alternative syntax would generate the exact same DOM structure as intended
 
 
 6. What is the purpose of the ViewChild decorator in this component example?
-@Component({
+`@Component({
  . . .
  template: '<p #test></p>'
 })
 export class UserDetailsComponent {
- @ViewChild('test') test;
+ @ViewChild('test') test;`
 
 
-= It makes the tag in the template support content projection.
+- It makes the tag in the template support content projection.
 - It indicates that the tag be rendered as a child of the parent view that uses this component.
 - **It provides access from within the component class to the ElementRef object for the tag that has the test template reference variable.**
 - It makes the tag visible in the final render. If @ViewChild was not used in the class, then Angular would automatically hide the tag that has #test on it.
